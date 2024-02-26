@@ -11,7 +11,7 @@ def contourDetection(cap):
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     #Gaussion Blur
-    blurred = cv2.GaussianBlur(gray, (5, 5), 0)
+    blurred = cv2.GaussianBlur(gray, (3, 3), 0)
 
     # Find Canny edges
     edged = cv2.Canny(blurred, 30, 200)
